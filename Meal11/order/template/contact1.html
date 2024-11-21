@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/contact.css">
+</head>
+<body>
+    <h1> </h1>
+    <div>
+        <nav class="n1">
+            <ul class="me1">
+                <li><a href="{% url 'style2' %}" > Home</a></li>
+                <li><a href="{% url 'menu' %}"> Menu</a></li>
+                <li><a href="{% url 'about' %}" > About</a></li>
+                <li><a href="{% url 'order' %}" >Order</a></li>
+                <li><a href="{% url 'about' %}" >Contact Us</a></li>
+                <!-- <li> <a href="#">Desert</a></li> -->
+                
+                <!-- <li><a href="#" >North Indian</a></li> -->
+            </ul>
+        </nav>
+      
+    </div>
+    <br> <br> <br> <br> 
+    <h1 > Get Touch With Us</h1>
+    <br>
+   <div class="contact">
+    <div class="contact_content" ">
+        
+   
+    <div style="padding-bottom: 300px;">
+        <center>
+            <form  style="height: 100px;" class="order-form" action="#" method="post">
+                {% csrf_token %}
+                <div>
+                    <label for="name" style="font-weight: bold; font-size: 2rem;">Name:</label>
+                    <input style="padding-left: -100px;" type="text" id="name" name="name">
+                </div>
+                <br>
+                
+                
+                <div>
+                    <label for="Email" style="font-weight: bold; font-size: 2rem;">Email:</label>
+                    <input type="email" id="mobile" name="email">
+                </div>
+                <br>
+                <div>
+                    <label for="itemName" style="font-weight: bold; font-size: 2rem;">Items Name:</label>
+                    <input style="padding-left: 65px;" type="text" id="itemName" name="itemName">
+                </div>
+                <br>
+                <div>
+                    <label for="quantity" style="font-weight: bold; font-size: 2rem;">Quantity:</label>
+                    <select id="quantity" name="quantity" >
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                    </select>
+                </div>
+                <br>
+               
+                <br>
+                <div>
+                    <input type="submit" value="Submit" class="btn">
+                </div>
+                <br>
+            </form>
+           
+    </center>
+    </div>
+    </div>
+    <div class="contact_content">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.679482919268!2d72.83850647357349!3d21.204887881709187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04ef9dc913593%3A0x96106052132786c3!2sSurat!5e0!3m2!1sen!2sin!4v1697392343680!5m2!1sen!2sin" width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+   </div>
+    <br><br><br><br>
+    <div class="footer">
+        <div class="footerb">
+           <b> Quick Link </b> <br><br>
+           <a href="PS.HTML" >Home</a><br> 
+           <a href="menu.html">Menu</a><br> 
+           <a href="about.html">About</a><br> 
+           <a href="order.html"> Order</a><br> 
+           <a href="contact.html">Contact </a><br> 
+         
+        </div>
+        
+        <div class="footerb">
+            <b> Menu</b> <br><br>
+           Veg Thali<br> 
+           Non Veg Thali<br>
+           Fast Food<br>
+           Pizza <br>
+           Pasta<br>
+        </div>
+        <div class="footerb">
+            <b> Address : </b> <br><br>
+            120 Surat Bhagal<br> 
+            Email : abc12@gmail.com<br>
+            Mobile : 9316573540<br>
+            Time : 9.00 AM to 5.00 Pm <br>
+           
+        </div>
+        <div class="footerb" >
+            <b> Directions</b>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10651.720974027823!2d72.8442247013261!3d21.20204524203642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04ef9dc913593%3A0x96106052132786c3!2sSurat!5e0!3m2!1sen!2sin!4v1697355961630!5m2!1sen!2sin" width="100%" height="150px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</body>
+</html>

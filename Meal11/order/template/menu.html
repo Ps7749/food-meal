@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="/static/menustyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap JS and dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div>
+        <!-- <nav class="n1">
+            <ul class="me1">
+                <li><a href="{% url 'style2' %}" > Home</a></li>
+                <li><a href="{% url 'menu' %}"> Menu</a></li>
+                <li><a href="{% url 'about' %}" > About</a></li>
+                <li><a href="{% url 'order' %}" >Order</a></li>
+                <li><a href="{% url 'about' %}" >Contact Us</a></li>
+                 <li> <a href="#">Desert</a></li> -->
+                
+                <!-- <li><a href="#" >North Indian</a></li> -->
+            <!-- </ul>
+        </nav> --> 
+    <nav class="n1" >
+        <ul class="me1">
+            <li><a href="#" style="margin-left: 0;"> Thai</a>
+            <ul id="menu">
+                <li><a href="#" > Pad Thai</a>
+                <li><a href="#" > Green Curry </a>
+                <li><a href="#" >Massaman Curry</a>
+
+            </ul></li>
+            <li><a href="#" > Beverages</a>
+            <ul>
+                <li><a href="#" > Coffee</a>
+                <li><a href="#" > Tea</a>
+                <li><a href="#" >Green Tea</a>
+
+            </ul></li>
+            <li><a href="#" > Starter</a>
+            <ul>
+                <li><a href="#" > Spring Roll</a>
+                <li><a href="#" > Nachos</a>
+                <li><a href="#" >Brushetta</a>
+
+            </ul></li>
+            <li><a href="#" >Soup</a>
+            <ul>
+                <li><a href="#" >Tomato Soup</a>
+                <li><a href="#" >Miso Soup</a>
+                <li><a href="#" >Clam Chowder</a>
+                
+            </ul></li>
+            <li><a href="#" >Chinese</a>
+                <ul>
+                <li><a href="#" >Dumpling</a>
+                <li><a href="#" > Chow Mein</a>
+                <li><a href="#" >Fried Rice</a>
+                </ul></li>
+            <li> <a href="#">Desert</a>
+            <ul>
+                <li><a href="#" >Gulab Jamun</a>
+                <li><a href="#" >Jalebi</a>
+                <li><a href="#" >Rasgulla</a>
+
+              
+            </ul></li>
+            
+            <!-- <li><a href="#" >North Indian</a></li> -->
+        </ul>
+    </nav>
+  
+</div>
+<!-- <br>
+<br>
+<br>
+<br> -->
+
+<!-- <section class="sec1">
+    <div class="punit">
+        <br>
+        <br>
+        <div id="m1">
+            <img src="image18.jpg">
+            <p>North Indian Thali<bR>
+                price $20
+               </p>
+        </div>
+        <div class="punit">
+            <div id="m1">
+                <img src="image19.jpg" >
+                <p>South Indian Thali<bR>
+                    price $17
+                   </p>
+            </div>
+            <div class="punit">
+                <div id="m1">
+                    <img src="image20.jpg">
+                    <p>Bengali Thali<bR>
+                        price $22
+                       </p>
+                </div>
+                <br>
+        <br> -->
+       
+<!-- </section> -->
+<div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="/static/slideshow1.jpg" class="d-block w-100" height="750" alt="Image" />
+        </div>
+        <div class="carousel-item">
+            <img src="/static/slideshow2.jpg" class="d-block w-100" height="750px" alt="Image 2">
+        </div>
+        <div class="carousel-item">
+            <img src="/static/slideshow4.jpg" class="d-block w-100" height="750" alt="Image 3">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+<script>
+    // Initialize the carousel with a faster rotation speed
+    var myCarousel = new bootstrap.Carousel(document.getElementById('imageCarousel'), {
+        interval: 1500, // Set the interval to 1.5 seconds (1500ms)
+        wrap: true
+    });
+</script>
+
+
+<h1 style="text-align: center;"> Top Food Items </h1><br>
+    <div class="top_cat">
+        <div class="top_cat_pro">
+            <img src="/static/burger.jpg" style="width: 100%;">
+            <div class="starr">
+            <span class=" fa fa-star checked"></span>
+            <span class=" fa fa-star checked"></span>
+            <span class=" fa fa-star checked"></span>
+            <span class=" fa fa-star checked"></span>
+            <span class=" fa fa-star "></span></div>
+            <div class="tittle">
+                <p>Veg Burger</p>
+            </div>
+        </div>
+        <div class="top_cat_pro">
+            <img src="/static/pizza.jpg" style="width: 100%;">
+            <div class="starr">
+                <span class=" fa fa-star checked"></span>
+                <span class=" fa fa-star checked"></span>
+                <span class=" fa fa-star checked"></span>
+                <span class=" fa fa-star checked"></span>
+                <span class=" fa fa-star checked "></span></div>
+                <div class="tittle">
+                    <p>Pizza</p>
+                </div>
+        </div>
+        <div class="top_cat_pro">
+            <img src="/static/sandwich.jpg" style="width: 100%;">
+            <div class="starr">
+                <span class=" fa fa-star checked"></span>
+                <span class=" fa fa-star checked"></span>
+                <span class=" fa fa-star checked"></span>
+                <span class=" fa fa-star "></span>
+                <span class=" fa fa-star "></span></div>
+                <div class="tittle">
+                    <p>Grill Sandwich</p>
+                </div>
+        </div>
+    </div>
+    <div class="top_cat">
+        <div class="top_cat_pro">
+            <img src="/static/breadegg.jpg" style="width: 100%;">
+            <div class="starr">
+                <span class=" fa fa-star checked"></span>
+                <span class=" fa fa-star checked"></span>
+                <span class=" fa fa-star checked"></span>
+                <span class=" fa fa-star "></span>
+                <span class=" fa fa-star "></span></div>
+                <div class="tittle">
+                    <p>Bread Egg</p>
+                </div>
+        </div>
+        <div class="top_cat_pro">
+            <img src="/static/palakpaneer.jpg" style="width: 100%;"> 
+            <div class="starr">
+                <span class=" fa fa-star checked"></span>
+                <span class=" fa fa-star checked"></span>
+                <span class=" fa fa-star checked"></span>
+                <span class=" fa fa-star checked"></span>
+                <span class=" fa fa-star "></span></div>
+                <div class="tittle">
+                    <p>Palak Paneer</p>
+                </div>
+        </div>
+        <div class="top_cat_pro">
+            <img src="/static/sahi paneer.jpg" style="width: 100%; height: 80%;">
+            <div class="starr">
+                <span class=" fa fa-star checked"></span>
+                <span class=" fa fa-star checked"></span>
+                <span class=" fa fa-star checked"></span>
+                <span class=" fa fa-star checked"></span>
+                <span class=" fa fa-star checked "></span></div>
+                <div class="tittle">
+                    <p>Sahi Paneer</p>
+                </div>
+        </div>
+       
+    </div>
+    <div class="footer">
+        <div class="footerb">
+           <b> Quick Link </b> <br><br>
+           <a href="{% url 'style2' %}" > Home</a><br>
+            <a href="{% url 'menu' %}"> Menu</a><br>
+            <a href="{% url 'about' %}" > About</a><br>
+            <a href="{% url 'order' %}" >Order</a><br>
+            <a href="{% url 'contact' %}" >Contact Us</a><br>
+         
+        </div>
+        <div class="footerb">
+            <b> Menu</b> <br><br>
+           Veg Thali<br> 
+           Non Veg Thali<br>
+           Fast Food<br>
+           Pizza <br>
+           Pasta<br>
+        </div>
+        <div class="footerb">
+            <b> Address : </b> <br><br>
+            120 Surat Bhagal<br> 
+            Email : abc12@gmail.com<br>
+            Mobile : 9316573540<br>
+            Time : 9.00 AM to 5.00 Pm <br>
+           
+        </div>
+        <div class="footerb" >
+            <b> Directions</b>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10651.720974027823!2d72.8442247013261!3d21.20204524203642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04ef9dc913593%3A0x96106052132786c3!2sSurat!5e0!3m2!1sen!2sin!4v1697355961630!5m2!1sen!2sin" width="100%" height="150px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+</body>
+</html>
+
