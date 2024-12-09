@@ -1,17 +1,17 @@
-TABLE OF CONTENTS
+# TABLE OF CONTENTS
 
-I. Introduction
+## I. Introduction
 
-II. Django Detail
+## II. Django Detail
 
-III. ER diagram
+## III. ER diagram
 
-IV. DFD (Data Flow Diagram
+## IV. DFD (Data Flow Diagram
 
-V. Conclusion 
+## V. Conclusion 
 <br>
 
-1.Introduction
+## 1.Introduction
 
 The Online Food Delivery Website is designed to provide
 a seamless and user-friendly platform for customers to
@@ -41,7 +41,7 @@ experience.
 
 
 
-2.What is Django?
+### 2.What is Django?
 
 Django is a high-level Python web framework that
 enables developers to build robust, scalable, and secure
@@ -51,7 +51,7 @@ its "batteries-included" approach, meaning it comes with
 built-in features such as an ORM (Object-Relational
 Mapping), user authentication, form handling, and more.
 
-2.1 Key Features of Django:
+### 2.1 Key Features of Django:
 
  Fast Development: It allows rapid
 development of web applications.
@@ -69,10 +69,10 @@ applications.
 an auto-generated admin panel to manage
 your application data.
 
-2.2 Creating a Virtual Environment in
+## 2.2 Creating a Virtual Environment in
 Django?
 
-2.2.1 What is a Virtual Environment?
+### 2.2.1 What is a Virtual Environment?
 
 A virtual environment is an isolated environment in
 Python that allows you to install and manage
@@ -81,7 +81,7 @@ without affecting the global Python installation. It ensures
 that different projects can have different versions of
 dependencies.
 
-2.2.2 Steps to Create and Activate a Virtual
+### 2.2.2 Steps to Create and Activate a Virtual
 Environment
 
 I. Install virtual env (if not installed): Open
@@ -92,7 +92,7 @@ name is myM)
 II. Activate the Virtual Environment:
 i. ‘myM\Scripts\activate’
 
-2.2.3 What Changes Does a Virtual
+### 2.2.3 What Changes Does a Virtual
 Environment Make?
 
 I. Environment Isolation: When activated,
@@ -107,17 +107,17 @@ III. Environment-Specific python and pip:
 Activating the virtual environment overrides the
 system’s Python and pip paths.
 
-2.3 Installing Django Using pip
+## 2.3 Installing Django Using pip
 
 After creating and activating a virtual environment, the
 next step is to install Django. This is done using Python's
 package manager, pip.
 
-2.3.1 What is pip?
+### 2.3.1 What is pip?
 pip stands for "Pip Installs Packages" and is a tool used to install
 and manage Python libraries and frameworks.
 
-2.4 Steps to Install Django:
+## 2.4 Steps to Install Django:
 
 1. Ensure the Virtual Environment is
 Activated: Before installing Django, ensure you
@@ -129,23 +129,23 @@ prompt will show the name of the virtual environment
 following command to install Django:
 “pip install Django”
 
-2.5 Creating a Django Project
+## 2.5 Creating a Django Project
 Once Django is installed, the next step is to create a new
 Django project. A project serves as the container for your
 web application and manages settings, URLs, and overall
 configuration.
 
-2.5.1 Command to Create a Project:
+### 2.5.1 Command to Create a Project:
 To create a Django project, use the Django-admin
 command as follows:
 ‘django-admin startproject meal’
 
-2.5.2 What Happens After Running This
+### 2.5.2 What Happens After Running This
 Command?
 When you run django-admin startproject meal, Django
 creates the following directory structure:
 
- Explanation of Files and Folders:
+# Explanation of Files and Folders:
  
 meal/ (Outer Folder): This is the root folder of your project.
 It contains all the files related to your Django project.
@@ -175,13 +175,13 @@ wsgi.py:
 Stands for Web Server Gateway Interface.
 Used to deploy the application on a production server.
 
-2.6 Navigating to the Project Folder
+## 2.6 Navigating to the Project Folder
 
 After creating the project, navigate to the outer folder (meal) to start working on
 your project. Use the following commands:
 ‘cd meal’
 
-2.7 Starting the Django Development Server
+## 2.7 Starting the Django Development Server
 
 Once your Django project is set up, you can run a development server to test
 your application locally. Use the following command:
@@ -189,13 +189,13 @@ your application locally. Use the following command:
 The command launches a lightweight server for development purposes. By
 default, the server runs on http://127.0.0.1:8000/ (localhost, port 8000).
 
-2.7.1 How to Access the Server?
+#### 2.7.1 How to Access the Server?
 
 Open your web browser and visit:
 ‘http://127.0.0.1:8000/’
 You’ll see Django's default welcome page, confirming the server is running.
 
- 2.8 Creating a Django App
+## 2.8 Creating a Django App
  
 In Django, an app is a modular component that handles specific functionality of
 your project. For example, in your project meal, you might have an app for
@@ -238,7 +238,7 @@ o Defines the logic for processing requests and returning responses.
  __init__.py:
 o Indicates that this is a Python package.
 
-2.8.2 After creating the app, you need to:
+### 2.8.2 After creating the app, you need to:
 
 Add the App to the Project:
 
@@ -246,7 +246,7 @@ Add the App to the Project:
 
  Add 'orderr', to the INSTALLED_APPS list.
 
-2.9 Creating the template Folder:
+## 2.9 Creating the template Folder:
 
  In your Django app (order), you created a folder named template.
 
@@ -269,7 +269,7 @@ details or queries.
 5. order.html: A page where users can place orders for food. This page has an
 option for users to place their orders.
 
-2.10 Django Views
+## 2.10 Django Views
 
 When we create a new app (order), the views.py file contains only:
  ‘from django.shortcuts import render’
@@ -300,7 +300,7 @@ o Handles a form submission (POST) to create a user and redirects to
 the style2 page.
 o If it's a GET request, it shows the contact1.html template.
 
-2.10.2 The views in your Online Food Delivery website
+#### 2.10.2 The views in your Online Food Delivery website
 handle the logic for rendering templates and processing
 user input. Here's a brief explanation of the views:
 
@@ -331,7 +331,7 @@ Creates a new user using Django’s User model (User.objects.create_user).
 Saves the user to the database and redirects to the style2.html page.
 GET Request: Renders the contact1.html template to display the contact form.
 
-2.11 Meal1(website) URLs
+## 2.11 Meal1(website) URLs
 
 In Django, before we can use certain functionality like working with the admin
 site or routing URLs, we need to import specific modules and classes. These
@@ -370,7 +370,7 @@ those URLs are visited.
  For example, views.aboutpage will be used to display the
 "about" page when the /about/ URL is accessed.
 
-2.12 Make Migrations
+## 2.12 Make Migrations
 
 In Django, migrations are how Django tracks changes to
 your database schema (like adding, modifying, or deleting
@@ -398,7 +398,7 @@ This will apply all the pending migrations (including the one
 that adds the description field) to the database, so your
 database schema matches your updated models.
 
-2.13 Create Superuser
+## 2.13 Create Superuser
 
  Run the following command to start the process of creating a
 superuser:
@@ -420,7 +420,7 @@ provide a confirmation message like this:
 This means the superuser has been created, and you can now log
 into the Django Admin.
 
-2.14
+# 2.14
 
 Logging into the Admin Site
 Now that you’ve created a superuser, you can access the Django
@@ -449,7 +449,7 @@ Example Code and Command Flow:
 Here’s an example of how the command flow will look like when
 you run createsuperuser:
 
-3. ER Diagram Representation
+### 3. ER Diagram Representation
 
 Here is a simplified ER (Entity Relationship) diagram representing the
 structure of your online food delivery website. Here's what it
@@ -468,7 +468,7 @@ chosen by customers and the order specifics.
 5. Contact Us: Linked to both Home and User, indicating that users can
 contact through this section.
 
-4.DFD Diagram
+### 4.DFD Diagram
 A data flow diagram (DFD) is a visual representation of how
 data flows through a system, illustrating the movement of
 information between various components or processes. In
@@ -527,7 +527,7 @@ Data Flow: Payment details -> Payment Gateway
 V. Order Confirmation Process:
 Data Flow: Confirmation details -> Order Confirmation Database
 
-5. Conclusion
+## 5. Conclusion
 
 The Online Food Delivery Website provides a robust and intuitive platform for
 users to explore and order food from various cuisines, offering a convenient and
